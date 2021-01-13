@@ -12,7 +12,8 @@ function fetchSimpsonsJSON() {
 
       // Build a block of HTML
       const simpHtml = `
-          <p><strong>${simp[0].quote}</strong></p>
+          <p>${simp[0].quote}</p>
+          <p><strong>${simp[0].character}</strong></p>
           <img src="${simp[0].image}" />
         `;
       document.querySelector("#simp").innerHTML = simpHtml;
